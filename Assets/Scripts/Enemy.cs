@@ -7,6 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
 
     [SerializeField] Transform _target;
+    
 
     NavMeshAgent _agent;
     // Start is called before the first frame update
