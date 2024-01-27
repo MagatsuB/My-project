@@ -18,39 +18,47 @@ public class PlayerControlle : MonoBehaviour
     [SerializeField] Vector2 _movement;
     [SerializeField] float _speed;
     [SerializeField] bool _isFacingRight, _isFacingUp, _desfaz;
+    [SerializeField] bool _AndandoLateral, _AndandoVertical, _Idle;
+
 
     void Start()
     {
         _controller = GetComponent<CharacterController>();
-        //_anim = GetComponent<Animator>();
+        _anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-         Move();
-         Anim();
-         Direcao();
+        Anim();
+        Move();
+        Direcao();
     }
 
     void Direcao()
     {
-        /*if (math.abs(_move.x) > math.abs(_move.y))
+        if (math.abs(_move.x) > math.abs(_move.y))
         {
-            transform.GetComponent<SpriteRenderer>().sprite = _sprLateral;
+            //transform.GetComponent<SpriteRenderer>().sprite = _sprLateral;
+            _AndandoLateral = true;
+            _AndandoVertical = false;
+            _Idle = false;
         }
+        
         if (math.abs(_move.y) > math.abs(_move.x))
         {
-            transform.GetComponent<SpriteRenderer>().sprite = _sprVertical;
+            //transform.GetComponent<SpriteRenderer>().sprite = _sprVertical;
+            _AndandoVertical = true;
+            _AndandoLateral = false;
+            _Idle = false;
         }
+        
         if (_move.x == 0 && _move.y == 0)
         {
-            transform.GetComponent<SpriteRenderer>().sprite = _sprIdle;
+            //transform.GetComponent<SpriteRenderer>().sprite = _sprIdle;
+            _AndandoVertical = false;
+            _AndandoLateral = false;
+            _Idle = true;
             //transform.localScale = Vector3.one;
-        }*/
-
-        if (_move.x > 0)
-        {
-            transform.GetComponent<SpriteRenderer>().sprite = _sprLateral;
         }
     }
 
@@ -72,18 +80,17 @@ public class PlayerControlle : MonoBehaviour
         {
             FlipTopDown();
         }
-        else if(_movement.y < 0 && _isFacingUp == false)
+        //else if(_movement.y < 0 && _isFacingUp == false)
         {
-            FlipTopDown();
+          //  FlipTopDown();
         }
     }
 
     void Anim()
     {
-       // float moveX = math.abs(_rb.velocity.x);
-       // _anim.SetFloat("Correndo", moveX);
-       // _anim.SetBool("CheckGround", _checkGround);
-       // _anim.SetFloat("VelocidadePulo", _rb.velocity.y);
+       _anim.SetBool("AndandoLateral", _AndandoLateral);
+       _anim.SetBool("AndandoVertical", _AndandoVertical);
+       _anim.SetBool("Idle", _Idle);
     }
     void FlipLeftRight()
     {
