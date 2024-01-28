@@ -1097,15 +1097,31 @@ MonoBehaviour:
   _profile: {fileID: 21300000, guid: 45e7a649346053649bce2255d1e23404, type: 3}
   _falastxt:
   - Tu-tudo certo, se-senhor. No que po-posso a-ajudar?
-  - com licenca
-  - ...
-  _NomeNPC: 
+  - Com licenca
+  - "N\xE3o me bata por favor"
+  - "J\xE1 quebraram dois \xF3culos meus na porrada... "
+  - "..S\xF3 essa semana"
+  - 'Por favor... '
+  _NomeNPC: Pato Nerd
   _playerLayer:
     serializedVersion: 2
     m_Bits: 0
   _radious: 0
   _dialogueControl: {fileID: 0}
   _onRadious: 0
+--- !u!114 &564157163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564157155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187de160828aa394881153289a8d3b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _aumentou: 0
 --- !u!1 &661698688 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8415410280528713660, guid: 55a88c46477caf0478bffbb84bb4924e,
@@ -1126,9 +1142,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _profile: {fileID: 21300000, guid: 254d253bcf5b27042a0f1e81fd9cbb9d, type: 3}
   _falastxt:
-  - Oi, meu jovem, pode me ajudar com uma coisa?
-  - "Voc\xEAs, jovens, sabem dessas coisas de rede social, n\xE9? "
-  - "D\xE1 uma ajudinha a recuperar a senha aqui."
+  - "Oh meu fi, pode me ajudar com neg\xF3cio?"
+  - "Voc\xEAs, jovens, sabem dessas coisas de internet "
+  - 'Eu esqueci minha senha... '
+  - "D\xE1 uma recuperar aqui..?"
+  - ...
+  - Apagou meu Zap!??
+  - GALO FILHA DA PUTA!!!
   _NomeNPC: Papagaio Boomer
   _playerLayer:
     serializedVersion: 2
@@ -1136,6 +1156,19 @@ MonoBehaviour:
   _radious: 1.63
   _dialogueControl: {fileID: 0}
   _onRadious: 0
+--- !u!114 &661698696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661698688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187de160828aa394881153289a8d3b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _aumentou: 0
 --- !u!1 &663617107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,8 +1699,10 @@ GameObject:
   - component: {fileID: 1019831041}
   - component: {fileID: 1019831043}
   - component: {fileID: 1019831042}
+  - component: {fileID: 1019831047}
   - component: {fileID: 1019831044}
   - component: {fileID: 1019831045}
+  - component: {fileID: 1019831046}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1786,6 +1821,40 @@ MonoBehaviour:
   _bts:
   - {fileID: 5016543984283921571}
   - {fileID: 1032657422}
+--- !u!114 &1019831046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019831040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187de160828aa394881153289a8d3b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _aumentou: 0
+--- !u!114 &1019831047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019831040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb827b6a07534d547a85c4f246164d9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _barrasFelicidade:
+  - {fileID: 1811396711}
+  - {fileID: 1040929600}
+  - {fileID: 1807045255}
+  - {fileID: 731187009}
+  - {fileID: 20929984}
+  _felicidadeAtual: 0
+  "_felicidadeM\xE1xima": 0
+  _valorAnterior: 0
 --- !u!1 &1020701152 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3794479997310194904, guid: afe64a82b14097f4db4984aa29c0c126,
@@ -3088,7 +3157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1412125917
 Transform:
   m_ObjectHideFlags: 0
@@ -3516,13 +3585,26 @@ MonoBehaviour:
   - "O que \xE9, \xF4, arrombado, n\xE3o ta vendo que eu to ocupado?"
   - ...
   - "Eu j\xE1 falei que \xE9 no cr\xE9dito, p\xF4. C\xEA \xE9 burro?"
-  _NomeNPC: 
+  _NomeNPC: Corvo Playboy
   _playerLayer:
     serializedVersion: 2
     m_Bits: 0
   _radious: 0
   _dialogueControl: {fileID: 0}
   _onRadious: 0
+--- !u!114 &1853362378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853362370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187de160828aa394881153289a8d3b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _aumentou: 0
 --- !u!1 &1917971418
 GameObject:
   m_ObjectHideFlags: 0
@@ -4141,6 +4223,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 605823426613510041}
+    - targetCorrespondingSourceObject: {fileID: 3794479997310194904, guid: afe64a82b14097f4db4984aa29c0c126,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 605823426613510044}
   m_SourcePrefab: {fileID: 100100000, guid: afe64a82b14097f4db4984aa29c0c126, type: 3}
 --- !u!4 &605823426613510038 stripped
 Transform:
@@ -4163,8 +4249,14 @@ MonoBehaviour:
   _profile: {fileID: 666499855, guid: d8da7c14a299bee48bea8270d68ef13f, type: 3}
   _falastxt:
   - coe coe coe
-  - "Arranja uma v e r d i n h a a\xED pra noiss"
-  - Sou um vagabundo consciente
+  - "Arranja uma verdinha a\xED pra noiss"
+  - "Os habitantes dessa cidade s\xE3o meio ignorantes"
+  - "Mas voc\xEA como turista j\xE1 deve saber disso..."
+  - "Se tiver um bagulho do bom s\xF3 me procurar"
+  - "\xC9 aquele neg\xF3cio"
+  - "Se voc\xEA \xE9 bom em algo nunca far\xE1 de gra\xE7a"
+  - "Ent\xE3o se quiser fumar um comigo, vc traz"
+  - E fumaremos para madrugarmos
   _NomeNPC: Sapo noia
   _playerLayer:
     serializedVersion: 2
@@ -4172,6 +4264,19 @@ MonoBehaviour:
   _radious: 1.63
   _dialogueControl: {fileID: 0}
   _onRadious: 0
+--- !u!114 &605823426613510044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020701152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187de160828aa394881153289a8d3b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _aumentou: 0
 --- !u!114 &807559501627587313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4424,6 +4529,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 661698692}
+    - targetCorrespondingSourceObject: {fileID: 8415410280528713660, guid: 55a88c46477caf0478bffbb84bb4924e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 661698696}
   m_SourcePrefab: {fileID: 100100000, guid: 55a88c46477caf0478bffbb84bb4924e, type: 3}
 --- !u!1 &3794479998712236813 stripped
 GameObject:
@@ -4587,6 +4696,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5281870279022469027}
+    - targetCorrespondingSourceObject: {fileID: 7305992285925078701, guid: b4f9c717b04ec7a4ab7e806451f5d1d2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5281870279022469031}
   m_SourcePrefab: {fileID: 100100000, guid: b4f9c717b04ec7a4ab7e806451f5d1d2, type: 3}
 --- !u!1 &5016543984283921571
 GameObject:
@@ -4638,13 +4751,28 @@ MonoBehaviour:
   - ...
   - ' Que foi, moleque?'
   - "T\xE1 me achando com cara de drogado?"
-  _NomeNPC: 
+  - "Sai de perto de mim seu ot\xE1rio!"
+  - Sorry i dont speak burrice
+  _NomeNPC: Coruja da Federal
   _playerLayer:
     serializedVersion: 2
     m_Bits: 0
   _radious: 0
   _dialogueControl: {fileID: 0}
   _onRadious: 0
+--- !u!114 &5281870279022469031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491670174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187de160828aa394881153289a8d3b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _aumentou: 0
 --- !u!1001 &5311089239848613039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4746,6 +4874,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1853362374}
+    - targetCorrespondingSourceObject: {fileID: 1185055134206964570, guid: c0b744d18916d164b8c7b7f2a82ef624,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1853362378}
   m_SourcePrefab: {fileID: 100100000, guid: c0b744d18916d164b8c7b7f2a82ef624, type: 3}
 --- !u!114 &5596450298595714205
 MonoBehaviour:
@@ -4893,12 +5025,12 @@ PrefabInstance:
     - target: {fileID: 4892439752406586445, guid: f29a4fb7ff907ed4cadb65f95dcb09ec,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.4
+      value: 26.79
       objectReference: {fileID: 0}
     - target: {fileID: 4892439752406586445, guid: f29a4fb7ff907ed4cadb65f95dcb09ec,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 33.87
+      value: 18.38
       objectReference: {fileID: 0}
     - target: {fileID: 4892439752406586445, guid: f29a4fb7ff907ed4cadb65f95dcb09ec,
         type: 3}
@@ -5125,6 +5257,11 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.6373482
       objectReference: {fileID: 0}
+    - target: {fileID: 4105175117709387957, guid: 9c0390c0843eb8b4491f0a591c70040c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7718855844985050193, guid: 9c0390c0843eb8b4491f0a591c70040c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5183,6 +5320,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 564157159}
+    - targetCorrespondingSourceObject: {fileID: 3805774081440521048, guid: 9c0390c0843eb8b4491f0a591c70040c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 564157163}
   m_SourcePrefab: {fileID: 100100000, guid: 9c0390c0843eb8b4491f0a591c70040c, type: 3}
 --- !u!1 &8579547139528767788
 GameObject:

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 288659574124534119}
   - component: {fileID: 3041763662799757714}
   - component: {fileID: 7004288841987072284}
+  - component: {fileID: 4288323372256980469}
   m_Layer: 0
   m_Name: GaloPunk
   m_TagString: Untagged
@@ -262,3 +263,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 1.5}
   m_EdgeRadius: 0
+--- !u!70 &4288323372256980469
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3240579435887203929}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.75}
+  m_Size: {x: 1.2, y: 1.5}
+  m_Direction: 0
