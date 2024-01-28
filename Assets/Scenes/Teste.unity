@@ -1016,10 +1016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _profile: {fileID: 0}
-  _falastxt:
-  - Tu-tudo certo, se-senhor. No que po-posso a-ajudar?
-  - "co-co-co-com licen\xE7a"
-  - ...
+  _falastxt: []
   _NomeNPC: 
   _playerLayer:
     serializedVersion: 2
@@ -1046,8 +1043,10 @@ MonoBehaviour:
   _profile: {fileID: 0}
   _falastxt:
   - Oi, meu jovem, pode me ajudar com uma coisa?
+  - "GaloPunk : Boa oportunidade pra dar uma brincada. Chefe \xE9 chefe, n\xE9, pai."
   - "Voc\xEAs, jovens, sabem dessas coisas de rede social, n\xE9? "
   - "D\xE1 uma ajudinha a recuperar a senha aqui."
+  - "GaloPunk : O que voc\xEA vai fazer com esse coroa burro?"
   _NomeNPC: Papagaio Boomer
   _playerLayer:
     serializedVersion: 2
@@ -3270,10 +3269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _profile: {fileID: 0}
-  _falastxt:
-  - " O que \xE9, \xF4, arrombado, n\xE3o ta vendo que eu to ocupado?"
-  - ...
-  - " Eu j\xE1 falei que \xE9 no cr\xE9dito, p\xF4. C\xEA \xE9 burro?"
+  _falastxt: []
   _NomeNPC: 
   _playerLayer:
     serializedVersion: 2
@@ -4338,10 +4334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _profile: {fileID: 0}
-  _falastxt:
-  - ...
-  - Que foi, moleque?
-  - "T\xE1 me achando com cara de drogado?"
+  _falastxt: []
   _NomeNPC: 
   _playerLayer:
     serializedVersion: 2
