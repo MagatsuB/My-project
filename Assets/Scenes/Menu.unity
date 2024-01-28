@@ -286,7 +286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Titulo Jooj
+  m_text: Galo Punk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3bf756bbe941f624b994a3d8f986f2d8, type: 2}
   m_sharedMaterial: {fileID: -5634743368065870741, guid: 3bf756bbe941f624b994a3d8f986f2d8,
@@ -296,8 +296,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4283914222
+  m_fontColor: {r: 0.9339623, g: 0.33922213, b: 0.33922213, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
