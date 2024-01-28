@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Windows;
@@ -10,6 +12,9 @@ public class PlayerControlle : MonoBehaviour
     [SerializeField] CharacterController _controller;
     [SerializeField] Rigidbody2D _rb2d;
 
+    [SerializeField] GameObject[] _carro;
+    [SerializeField] Transform _carSpawner, _carSpawner2;
+
     [SerializeField] Sprite _sprVertical;
     [SerializeField] Sprite _sprLateral;
     [SerializeField] Sprite _sprIdle;
@@ -18,6 +23,7 @@ public class PlayerControlle : MonoBehaviour
     [SerializeField] Vector2 _move;
     [SerializeField] Vector2 _movement;
     [SerializeField] float _speed;
+    [SerializeField] float _aceleracaoCarro;
     [SerializeField] bool _isFacingRight, _isFacingUp, _desfaz;
     [SerializeField] bool _AndandoLateral, _AndandoVertical, _Idle;
 
@@ -67,7 +73,7 @@ public class PlayerControlle : MonoBehaviour
     void Move()
     {
         _movement = new Vector3(_move.x, _move.y);
-        _rb2d.velocity = _movement * _speed * Time.deltaTime;
+        _rb2d.velocity = _movement * _speed;
         //_controller.Move(_movement * _speed * Time.deltaTime);
         
 
@@ -115,38 +121,36 @@ public class PlayerControlle : MonoBehaviour
 
     }
 
+    void Carro1()
+    {
+            
+            Instantiate(_carro[0], _carSpawner, false);
+            _carro[0].SetActive(true);
+    }
+    void Carro2()
+    {
+            Instantiate(_carro[1], _carSpawner2, false);
+            _carro[1].SetActive(true);
+    }
+
     public void SetMove(InputAction.CallbackContext value)
     {
         _move = value.ReadValue<Vector2>();
     }
-    /*public void SetJump(InputAction.CallbackContext value)
-    {
-        Jump();
-    }*/
 
-    /*public void Iniciar()
-    {
-        _checkIni = true;
-    }*/
-
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            _checkGround = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            _checkGround = false;
-        }
-    }*/
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.name);
+        //Debug.Log(collision.gameObject.name);
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("CarTrigger"))
+        {
+            Invoke("Carro1", 2f);
+        }
+        if (collision.gameObject.CompareTag("CarTriggerRoxo"))
+        {
+            Invoke("Carro2", 1.5f);
+        }
+    }
 }

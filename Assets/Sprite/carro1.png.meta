@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6016713cf9506b44083fadbd09810a46
+guid: d79faafd266fc27419f41dbe25dcf6f8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,91 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: patonerd-sheet_0
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 0
-        width: 140
-        height: 150
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f71a360de5f2c54ba7e7501cbb548df
-      internalID: -2087262802
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: patonerd-sheet_1
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 0
-        width: 140
-        height: 150
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44fcee7bf0fb8c14ab2f4cf6f151a03c
-      internalID: -1449461794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: patonerd-sheet_2
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 0
-        width: 140
-        height: 150
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 808e1a5c4b9810940994145fac998aad
-      internalID: 1326720838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: patonerd-sheet_3
-      rect:
-        serializedVersion: 2
-        x: 490
-        y: 0
-        width: 140
-        height: 150
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efff345434b4fb04182d4ef98e78df2d
-      internalID: 1626098440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -216,11 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      patonerd-sheet_0: -2087262802
-      patonerd-sheet_1: -1449461794
-      patonerd-sheet_2: 1326720838
-      patonerd-sheet_3: 1626098440
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
