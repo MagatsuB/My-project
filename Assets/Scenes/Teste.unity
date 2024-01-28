@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd22e9cbc482f44d99f79c4d1e75d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _profile: {fileID: 0}
+  _profile: {fileID: 21300000, guid: 45e7a649346053649bce2255d1e23404, type: 3}
   _falastxt:
   - Tu-tudo certo, se-senhor. No que po-posso a-ajudar?
   - com licenca
@@ -1124,7 +1124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd22e9cbc482f44d99f79c4d1e75d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _profile: {fileID: 0}
+  _profile: {fileID: 21300000, guid: 254d253bcf5b27042a0f1e81fd9cbb9d, type: 3}
   _falastxt:
   - Oi, meu jovem, pode me ajudar com uma coisa?
   - "Voc\xEAs, jovens, sabem dessas coisas de rede social, n\xE9? "
@@ -3511,7 +3511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd22e9cbc482f44d99f79c4d1e75d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _profile: {fileID: 0}
+  _profile: {fileID: 21300000, guid: 8ec9af2d3dc7f554190b47276c0c4c7e, type: 3}
   _falastxt:
   - "O que \xE9, \xF4, arrombado, n\xE3o ta vendo que eu to ocupado?"
   - ...
@@ -4633,7 +4633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd22e9cbc482f44d99f79c4d1e75d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _profile: {fileID: 0}
+  _profile: {fileID: 21300000, guid: a9c4b3e21e8405c44a7b6a523eda0063, type: 3}
   _falastxt:
   - ...
   - ' Que foi, moleque?'
