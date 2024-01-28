@@ -769,7 +769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _profile: {fileID: 666499855, guid: d8da7c14a299bee48bea8270d68ef13f, type: 3}
-  _falastxt: "Quer Um Pega irm\xE3o??"
+  _falastxt: []
   _NomeNPC: Sapo Das Ervas
   _playerLayer:
     serializedVersion: 2
@@ -2492,7 +2492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1289662766
 MonoBehaviour:
   m_ObjectHideFlags: 0
