@@ -8,6 +8,7 @@ using UnityEngine.Windows;
 public class PlayerControlle : MonoBehaviour
 {
     [SerializeField] CharacterController _controller;
+    [SerializeField] Rigidbody2D _rb2d;
 
     [SerializeField] Sprite _sprVertical;
     [SerializeField] Sprite _sprLateral;
@@ -23,8 +24,9 @@ public class PlayerControlle : MonoBehaviour
 
     void Start()
     {
-        _controller = GetComponent<CharacterController>();
+        //_controller = GetComponent<CharacterController>();
         _anim = GetComponent<Animator>();
+        _rb2d = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -64,8 +66,9 @@ public class PlayerControlle : MonoBehaviour
 
     void Move()
     {
-        _movement = new Vector3(_move.x, _move.y).normalized;
-        _controller.Move(_movement * _speed * Time.deltaTime);
+        _movement = new Vector3(_move.x, _move.y);
+        _rb2d.velocity = _movement * _speed * Time.deltaTime;
+        //_controller.Move(_movement * _speed * Time.deltaTime);
         
 
         if (_movement.x > 0 && _isFacingRight == true) 
@@ -141,6 +144,9 @@ public class PlayerControlle : MonoBehaviour
             _checkGround = false;
         }
     }*/
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log(collision.gameObject.name);
+    }
 
 }
