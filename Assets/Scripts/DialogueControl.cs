@@ -29,7 +29,7 @@ public class DialogueControl : MonoBehaviour
 
     IEnumerator TypeSentence()
     {
-        foreach (char letter in _sentences[index].ToCharArray)
+        foreach (char letter in _sentences[index].ToCharArray())
         {
             _falas.text += letter;
             yield return new WaitForSeconds(_textvelocity);

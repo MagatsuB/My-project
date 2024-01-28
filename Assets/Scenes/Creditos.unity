@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nome 3
+  m_text: Paulo Tavares
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3bf756bbe941f624b994a3d8f986f2d8, type: 2}
   m_sharedMaterial: {fileID: -5634743368065870741, guid: 3bf756bbe941f624b994a3d8f986f2d8,
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 85
+  m_fontSizeBase: 85
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -144.30508, y: 0, z: -141.09053, w: 42.581745}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -315,7 +315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nome 1
+  m_text: Breno Reis
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3bf756bbe941f624b994a3d8f986f2d8, type: 2}
   m_sharedMaterial: {fileID: -5634743368065870741, guid: 3bf756bbe941f624b994a3d8f986f2d8,
@@ -343,8 +343,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 98.1
+  m_fontSizeBase: 98.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -379,7 +379,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -165.85194, y: 0, z: -129.33311, w: 42.581738}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -530,8 +530,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4287598574
+  m_fontColor: {r: 0.9339623, g: 0.5594963, b: 0.5594963, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -548,8 +548,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.09
-  m_fontSizeBase: 44.09
+  m_fontSize: 173.4
+  m_fontSizeBase: 173.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -584,7 +584,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -45.975647, y: -14.603584, z: -48.72048, w: 52.97428}
+  m_margin: {x: -262.3145, y: -14.603584, z: -250.95027, w: -10.516516}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -731,7 +731,7 @@ RectTransform:
   m_GameObject: {fileID: 1428436964}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5507212, y: 2.5507212, z: 2.5507212}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2124434133}
@@ -739,7 +739,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17, y: -173}
+  m_AnchoredPosition: {x: -17, y: -478.06}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1428436966
@@ -863,7 +863,7 @@ RectTransform:
   m_GameObject: {fileID: 1486680615}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 88.660545}
-  m_LocalScale: {x: 0.024691358, y: 0.024691358, z: 0.024691358}
+  m_LocalScale: {x: 0.024691358, y: 0.024691358, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1979765913}
@@ -893,7 +893,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nome 5
+  m_text: Mariana
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3bf756bbe941f624b994a3d8f986f2d8, type: 2}
   m_sharedMaterial: {fileID: -5634743368065870741, guid: 3bf756bbe941f624b994a3d8f986f2d8,
@@ -921,8 +921,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 85
+  m_fontSizeBase: 85
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -957,7 +957,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 47.348072}
+  m_margin: {x: -158.46785, y: -37.624176, z: -136.38757, w: 76.48295}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1028,7 +1028,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nome 4
+  m_text: "Jo\xE3o Apoena"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3bf756bbe941f624b994a3d8f986f2d8, type: 2}
   m_sharedMaterial: {fileID: -5634743368065870741, guid: 3bf756bbe941f624b994a3d8f986f2d8,
@@ -1056,8 +1056,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 85
+  m_fontSizeBase: 85
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1092,7 +1092,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -161.82019, y: 0, z: -176.02505, w: 53.09138}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1163,7 +1163,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nome 2
+  m_text: Leonardo Costa
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3bf756bbe941f624b994a3d8f986f2d8, type: 2}
   m_sharedMaterial: {fileID: -5634743368065870741, guid: 3bf756bbe941f624b994a3d8f986f2d8,
@@ -1191,8 +1191,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 85
+  m_fontSizeBase: 85
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -203.52159, y: 0, z: -174.05711, w: 31.375973}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1383,7 +1383,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 53.476967, y: 6.792842}
+  m_AnchoredPosition: {x: 53.476967, y: 362}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1979765914
@@ -1406,8 +1406,8 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 102.2, y: 95.3}
-  m_Spacing: {x: 0, y: -94.1}
+  m_CellSize: {x: 102.5, y: 97.51}
+  m_Spacing: {x: -8.7, y: -93.6}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!1 &2112666953
