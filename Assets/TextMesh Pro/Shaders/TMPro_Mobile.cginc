@@ -35,7 +35,8 @@ pixel_t VertShader(vertex_t input)
     UNITY_TRANSFER_INSTANCE_ID(input, output);
     UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(output);
 
-    float bold = step(input.texcoord1.y, 0);
+    float bold = step(
+    texcoord1.y, 0);
 
     float4 vert = input.position;
     vert.x += _VertexOffsetX;
