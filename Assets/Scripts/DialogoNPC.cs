@@ -11,44 +11,39 @@ public class DialogoNPC : MonoBehaviour
     public LayerMask _playerLayer;
     public float _radious;
 
-    private DialogueControl _dialogueControl;
-    bool _onRadious;
+    public DialogueControl _dialogueControl;
+    [SerializeField] bool _onRadious;
 
     private void Start()
     {
         _dialogueControl = FindObjectOfType<DialogueControl>();
     }
 
-    private void FixedUpdate()
-    {
-        Interact();
-    }
 
-    private void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (_onRadious && Input.GetKeyDown(KeyCode.Space)) 
-        {
-            Debug.Log("ChamouOSpeech");
-            _dialogueControl.Speech(_profile, _falastxt, _NomeNPC);
-        }
-    }
+        if (collision.gameObject.layer==13){
 
-    public void Interact()
-    {
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, _radious, _playerLayer);
-        
-        if (hit != null)
-        {
             _onRadious = true;
-        }
-        else
-        {
-            _onRadious= false;
+            Camera.main.GetComponent<ControlDialogo>()._dialogoNPC = GetComponent<DialogoNPC>();
+            Camera.main.GetComponent<ControlDialogo>()._dialogo.SetActive(true);
+            Camera.main.GetComponent<ControlDialogo>()._bts[0].SetActive(true);
+            Camera.main.GetComponent<ControlDialogo>()._bts[1].SetActive(false);
+            Camera.main.GetComponent<ControlDialogo>().TextDialogo(0);
+            //_dialogueControl.Speech(_profile, _falastxt[0], _NomeNPC);
         }
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        Gizmos.DrawWireSphere(transform.position, _radious);
+        if (collision.gameObject.layer == 13)
+        {
+            _onRadious = false;
+            Camera.main.GetComponent<ControlDialogo>()._dialogo.SetActive(false);
+            Camera.main.GetComponent<ControlDialogo>()._dialogoNPC = null;
+
+          //  _dialogueControl = collision.GetComponent<DialogueControl>();
+          //  _dialogueControl.DialogueObjOff();
+        }
     }
 }

@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,17 +17,28 @@ public class DialogueControl : MonoBehaviour
     public float _textvelocity;
     private string[] _sentences;
     private int index;
+    public GameObject[] _bts;
 
-    public void Speech(Sprite _p, string[] _txt, string _nomedoElemento)
+
+    public void Speech(Sprite _p, string _txt, string _nomedoElemento)
     {
         _dialogueObj.SetActive(true);
         _profile.sprite = _p;
-        //_falas.text = _txt;
-        _sentences = _txt;
+        _falas.text = _txt;
+        //_sentences = _txt;
         _nomedoElementoText.text = _nomedoElemento;
-        StartCoroutine(TypeSentence());
+        _bts[0].SetActive(true);
+        _bts[1].SetActive(false);
+      //  StartCoroutine(TypeSentence());
 
+    }
 
+    public void DialogueObjOff()
+    {
+        _dialogueObj.SetActive(false);
+        index = 0;
+        _falas.text = _sentences[index];
+       // StartCoroutine(TypeSentence());
     }
 
     IEnumerator TypeSentence()
@@ -34,29 +47,24 @@ public class DialogueControl : MonoBehaviour
         {
             _falas.text += letter;
             yield return new WaitForSeconds(_textvelocity);
-
         }
     }
 
     public void NextSentence()
     {
-        if (_falas.text == _sentences[index])
+     //   _falas.text = _dialogueObj;
+        index++;
+        if (index >= _sentences.Length)
         {
-
-            if (index < _sentences.Length - 1)
-            {
-                index++;
-                _falas.text = "";
-                StartCoroutine(TypeSentence());
-            }
+            
         }
         else
         {
-            _falas.text = "";
-            index = 0;
-            _dialogueObj.SetActive(false);
+           
         }
     }
+
+
 
 
 }

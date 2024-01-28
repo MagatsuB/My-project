@@ -7,6 +7,7 @@ public class CameraFollowPlayer : MonoBehaviour
     public GameObject target;
     public float smoothing = 5f;
     [SerializeField] Vector3 offset;
+    public DialogueControl _dialogueControl;
     
     void Start()
     {
