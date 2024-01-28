@@ -12,6 +12,7 @@ public class DialogoNPC : MonoBehaviour
     public float _radious;
 
     private DialogueControl _dialogueControl;
+    bool _onRadious;
 
     private void Start()
     {
@@ -23,13 +24,26 @@ public class DialogoNPC : MonoBehaviour
         Interact();
     }
 
+    private void Update()
+    {
+        if (_onRadious && Input.GetKeyDown(KeyCode.Space)) 
+        {
+            Debug.Log("ChamouOSpeech");
+            _dialogueControl.Speech(_profile, _falastxt, _NomeNPC);
+        }
+    }
+
     public void Interact()
     {
         Collider2D hit = Physics2D.OverlapCircle(transform.position, _radious, _playerLayer);
         
         if (hit != null)
         {
-            _dialogueControl.Speech(_profile, _falastxt, _NomeNPC);
+            _onRadious = true;
+        }
+        else
+        {
+            _onRadious= false;
         }
     }
 
