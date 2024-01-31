@@ -146,11 +146,11 @@ public class PlayerControlle : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("CarTrigger"))
         {
-            Invoke("Carro1", 2f);
+            //Invoke("Carro1", 2f);
         }
         if (collision.gameObject.CompareTag("CarTriggerRoxo"))
         {
-            Invoke("Carro2", 1.5f);
+            //Invoke("Carro2", 1.5f);
         }
     }
 }
